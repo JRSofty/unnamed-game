@@ -6,4 +6,10 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>game-api</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.github.jrsofty</groupId>
+  		<artifactId>game-lib-wrapper</artifactId>
+  	</dependency>
+  </dependencies>
 </project>
