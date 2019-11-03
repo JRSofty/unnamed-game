@@ -28,5 +28,6 @@
 	</dependencyManagement>
 	<modules>
 		<module>game-lib-wrapper</module>
+		<module>game-api</module>
 	</modules>
 </project>
