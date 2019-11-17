@@ -1,0 +1,9 @@
+package com.jrsofty.github.game.api;
+
+public interface ObservedSubject {
+    void addObserver(Observer observer);
+
+    void removeObserver(Observer observer);
+
+    void notifyObservers(Entity entity, ObserverEvent event);
+}
