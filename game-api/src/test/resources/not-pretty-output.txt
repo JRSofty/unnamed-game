@@ -1,0 +1,1 @@
+{examples:{childrenEntries:[{collectionEntryTest:[Apple,Is,Good,Pie]},{boolEntryTest:true},{stringEntryTest:SomeStringData},{integerEntryTest:100}]}}
