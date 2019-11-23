@@ -1,4 +1,4 @@
-package com.jrsofty.github.game.api;
+package com.github.jrsofty.game.api;
 
 import java.io.Serializable;
 import java.util.UUID;

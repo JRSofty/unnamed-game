@@ -1,4 +1,4 @@
-package com.jrsofty.github.game.api;
+package com.github.jrsofty.game.api;
 
 public interface ObservedSubject {
     void addObserver(Observer observer);
