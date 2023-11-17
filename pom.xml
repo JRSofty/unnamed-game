@@ -12,9 +12,26 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<lwjgl.version>3.3.3</lwjgl.version>
 		<junit.version>5.5.2</junit.version>
+		<jackson.version>2.16.0</jackson.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.dataformat</groupId>
+				<artifactId>jackson-dataformat-xml</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.lwjgl</groupId>
 				<artifactId>lwjgl</artifactId>
