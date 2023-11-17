@@ -23,8 +23,10 @@ public abstract class GameDataRegistryFactory {
             if (this.registries.containsKey(registryName)) {
                 throw new RuntimeException("Registry already exists");
             }
-            this.registries.put(registryName, new GameDataRegistryImpl());
-            return this.registries.get(registryName);
+            final GameDataRegistry registry = new GameDataRegistryImpl();
+            registry.setRegistryName(registryName);
+            this.registries.put(registryName, registry);
+            return registry;
         }
 
         @Override
