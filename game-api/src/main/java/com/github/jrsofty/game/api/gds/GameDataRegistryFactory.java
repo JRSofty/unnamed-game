@@ -2,20 +2,20 @@ package com.github.jrsofty.game.api.gds;
 
 import java.util.HashMap;
 
-public interface GameDataRegistryFactory {
-    GameDataRegistryFactory INSTANCE = new GameDataRegistryFactoryImpl();
+public abstract class GameDataRegistryFactory {
+    private static final GameDataRegistryFactory INSTANCE = new GameDataRegistryFactoryImpl();
 
-    static GameDataRegistryFactory getDefaultFactory() {
+    public static GameDataRegistryFactory getDefaultFactory() {
         return GameDataRegistryFactory.INSTANCE;
     }
 
-    GameDataRegistry createRegistry(String registryName);
+    abstract GameDataRegistry createRegistry(String registryName);
 
-    GameDataRegistry getRegistry(String registryName);
+    abstract GameDataRegistry getRegistry(String registryName);
 
-    void deleteRegistry(String registryName);
+    abstract void deleteRegistry(String registryName);
 
-    class GameDataRegistryFactoryImpl implements GameDataRegistryFactory {
+    static class GameDataRegistryFactoryImpl extends GameDataRegistryFactory {
         private final HashMap<String, GameDataRegistry> registries = new HashMap<>();
 
         @Override
