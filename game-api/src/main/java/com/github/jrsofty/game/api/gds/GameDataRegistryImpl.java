@@ -2,7 +2,7 @@ package com.github.jrsofty.game.api.gds;
 
 import java.util.LinkedHashMap;
 
-public class GameDataRegistryImpl implements GameDataRegistry {
+class GameDataRegistryImpl implements GameDataRegistry {
 
     private final LinkedHashMap<String, GameDataEntry<?>> internalMap = new LinkedHashMap<>();
 
