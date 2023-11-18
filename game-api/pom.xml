@@ -23,6 +23,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.jrsofty</groupId>
+			<artifactId>game-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.jrsofty</groupId>
 			<artifactId>game-lib-wrapper</artifactId>
 		</dependency>
 		<dependency>

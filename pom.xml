@@ -48,6 +48,11 @@
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.github.jrsofty</groupId>
+				<artifactId>game-commons</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.junit.jupiter</groupId>
 				<artifactId>junit-jupiter-api</artifactId>
 				<version>${junit.version}</version>
@@ -64,5 +69,6 @@
 	<modules>
 		<module>game-lib-wrapper</module>
 		<module>game-api</module>
+		<module>game-commons</module>
 	</modules>
 </project>

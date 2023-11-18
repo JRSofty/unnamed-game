@@ -1,4 +1,4 @@
-package com.github.jrsofty.game.api.io;
+package com.github.jrsofty.game.commons.io;
 
 import java.io.IOException;
 import java.util.Set;
