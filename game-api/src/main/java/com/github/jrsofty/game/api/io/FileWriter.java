@@ -6,6 +6,6 @@ public interface FileWriter {
 
     String getPath();
 
-    void writeToFile(String fullFilePath, String data) throws IOException;
+    void writeToFile(String fullFilePath, byte[] data) throws IOException;
 
 }
